@@ -100,7 +100,7 @@
     <td>1121131632</td>
     <td>not enough RAM</td>
     <td>2546398</td>
-    <td>0,02%</td>
+    <td>0,2%</td>
   </tr>
   <tr>
     <td>7</td>
