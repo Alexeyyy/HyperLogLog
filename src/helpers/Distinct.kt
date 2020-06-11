@@ -1,14 +1,10 @@
 package helpers
 
-import com.sun.org.apache.xpath.internal.operations.Bool
 import hyperLogLog.FNV1a
 import hyperLogLog.HyperLogLog
 import java.io.BufferedReader
-import java.io.File
 import java.io.FileInputStream
 import java.io.InputStreamReader
-import java.nio.file.Files
-import java.nio.file.Paths
 import java.time.Instant
 import java.util.HashSet
 
@@ -25,7 +21,7 @@ object Distinct {
             var br = BufferedReader(InputStreamReader(fis))
             var hashSet: HashSet<String> = hashSetOf()
             var line: String?
-            var index = 0
+            var index: Long = 0
 
             // Считаем время выполнения алгоритма.
             val start: Long = Instant.now().toEpochMilli()
